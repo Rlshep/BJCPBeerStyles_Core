@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.github.rlshep.bjcp2015beerstyles.domain.CategoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-11-24T05:04:13" hostname="minitrue" time="0.002">
-  <properties/>
-  <testcase name="getTruncatedCategoryCodeReturnsNothingAfterDash" classname="io.github.rlshep.bjcp2015beerstyles.domain.CategoryTest" time="0.002"/>
-  <testcase name="getTruncatedCategoryCodeReturnsNoChangeIfNoDash" classname="io.github.rlshep.bjcp2015beerstyles.domain.CategoryTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
