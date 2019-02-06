@@ -4,16 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Category implements Comparable {
-    public final static double CURRENT_REVISION = 2015;
-
     private long id;
     private long parentId;
     private String categoryCode;
     private String name;
-    private double revision;
+    private String revision;
     private String language;
-    private Integer orderNumber;
-    private boolean bookmarked;
+    private Integer orderNumber = 0;
+    private boolean bookmarked = false;
     private List<Section> sections = new ArrayList<Section>();
     private List<Category> childCategories = new ArrayList<Category>();
     private List<VitalStatistics> vitalStatisticses = new ArrayList<>();
@@ -29,20 +27,17 @@ public class Category implements Comparable {
     }
 
     public Category() {
-        this.revision = CURRENT_REVISION;
     }
 
-    public Category(String categoryCode, String language) {
-        this.categoryCode = categoryCode;
-        this.language = language;
-        this.revision = CURRENT_REVISION;
+    public Category(Category clone) {
+        this.language = clone.getLanguage();
+        this.revision = clone.getRevision();
     }
 
-    public Category(long id, String categoryCode, String name, String language) {
-        this.id = id;
+    public Category(Category clone, String categoryCode) {
+        this.language = clone.getLanguage();
+        this.revision = clone.getRevision();
         this.categoryCode = categoryCode;
-        this.name = name;
-        this.language = language;
     }
 
     public long getId() {
@@ -81,11 +76,11 @@ public class Category implements Comparable {
         this.categoryCode = categoryCode;
     }
 
-    public double getRevision() {
+    public String getRevision() {
         return revision;
     }
 
-    public void setRevision(double revision) {
+    public void setRevision(String revision) {
         this.revision = revision;
     }
 
