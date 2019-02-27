@@ -59,4 +59,6 @@ public class BjcpContract {
     public static final String XML_HEAD = "styleguide";
     public static final String XML_LANGUAGE = "language";
     public static final String XML_REVISION = "revision";
+    public static final String XML_LINK = "a";
+    public static final String XML_HREF = "href";
 }
