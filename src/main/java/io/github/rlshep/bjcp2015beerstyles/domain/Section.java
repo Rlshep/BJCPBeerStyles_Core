@@ -3,7 +3,6 @@ package io.github.rlshep.bjcp2015beerstyles.domain;
 public class Section {
     private long id;
     private long categoryId;
-    private String header;
     private String body;
     private long orderNumber;
 
@@ -28,14 +27,6 @@ public class Section {
 
     public void setCategoryId(long categoryId) {
         this.categoryId = categoryId;
-    }
-
-    public String getHeader() {
-        return header;
-    }
-
-    public void setHeader(String header) {
-        this.header = header;
     }
 
     public String getBody() {
