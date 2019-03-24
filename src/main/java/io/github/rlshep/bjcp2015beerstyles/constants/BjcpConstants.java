@@ -9,7 +9,7 @@ public class BjcpConstants {
     public static final String UNIT = "unit";
     public static final String METRIC = "metric";
     public static final String IMPERIAL = "imperial";
-    private static final String[] ALLOWED_LANGUAGES = {"en", "es"};
-    private static final List allowedLanguages = Arrays.asList(ALLOWED_LANGUAGES);
+    public static final String[] ALLOWED_LANGUAGES = {"en", "es"};
+    public static final List allowedLanguages = Arrays.asList(ALLOWED_LANGUAGES);
 
 }
