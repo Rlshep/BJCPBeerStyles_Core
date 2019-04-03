@@ -1,19 +1,18 @@
 package io.github.rlshep.bjcp2015beerstyles.domain;
 
 public class VitalStatistics {
-
     private long id;
     private long categoryId;
-    private String ogStart;
-    private String ogEnd;
-    private String fgStart;
-    private String fgEnd;
-    private String ibuStart;
-    private String ibuEnd;
-    private String srmStart;
-    private String srmEnd;
-    private String abvStart;
-    private String abvEnd;
+    private double ogStart;
+    private double ogEnd;
+    private double fgStart;
+    private double fgEnd;
+    private int ibuStart;
+    private int ibuEnd;
+    private double srmStart;
+    private double srmEnd;
+    private double abvStart;
+    private double abvEnd;
     private String header = "";
 
     public VitalStatistics() {
@@ -35,83 +34,83 @@ public class VitalStatistics {
         this.categoryId = categoryId;
     }
 
-    public String getOgStart() {
+    public double getOgStart() {
         return ogStart;
     }
 
-    public void setOgStart(String ogStart) {
+    public void setOgStart(double ogStart) {
         this.ogStart = ogStart;
     }
 
-    public String getOgEnd() {
+    public double getOgEnd() {
         return ogEnd;
     }
 
-    public void setOgEnd(String ogEnd) {
+    public void setOgEnd(double ogEnd) {
         this.ogEnd = ogEnd;
     }
 
-    public String getFgStart() {
+    public double getFgStart() {
         return fgStart;
     }
 
-    public void setFgStart(String fgStart) {
+    public void setFgStart(double fgStart) {
         this.fgStart = fgStart;
     }
 
-    public String getFgEnd() {
+    public double getFgEnd() {
         return fgEnd;
     }
 
-    public void setFgEnd(String fgEnd) {
+    public void setFgEnd(double fgEnd) {
         this.fgEnd = fgEnd;
     }
 
-    public String getIbuStart() {
+    public int getIbuStart() {
         return ibuStart;
     }
 
-    public void setIbuStart(String ibuStart) {
+    public void setIbuStart(int ibuStart) {
         this.ibuStart = ibuStart;
     }
 
-    public String getIbuEnd() {
+    public int getIbuEnd() {
         return ibuEnd;
     }
 
-    public void setIbuEnd(String ibuEnd) {
+    public void setIbuEnd(int ibuEnd) {
         this.ibuEnd = ibuEnd;
     }
 
-    public String getSrmStart() {
+    public double getSrmStart() {
         return srmStart;
     }
 
-    public void setSrmStart(String srmStart) {
+    public void setSrmStart(double srmStart) {
         this.srmStart = srmStart;
     }
 
-    public String getSrmEnd() {
+    public double getSrmEnd() {
         return srmEnd;
     }
 
-    public void setSrmEnd(String srmEnd) {
+    public void setSrmEnd(double srmEnd) {
         this.srmEnd = srmEnd;
     }
 
-    public String getAbvStart() {
+    public double getAbvStart() {
         return abvStart;
     }
 
-    public void setAbvStart(String abvStart) {
+    public void setAbvStart(double abvStart) {
         this.abvStart = abvStart;
     }
 
-    public String getAbvEnd() {
+    public double getAbvEnd() {
         return abvEnd;
     }
 
-    public void setAbvEnd(String abvEnd) {
+    public void setAbvEnd(double abvEnd) {
         this.abvEnd = abvEnd;
     }
 
