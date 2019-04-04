@@ -9,8 +9,8 @@ public class VitalStatistics {
     private double fgEnd;
     private int ibuStart;
     private int ibuEnd;
-    private double srmStart;
-    private double srmEnd;
+    private int srmStart;
+    private int srmEnd;
     private double abvStart;
     private double abvEnd;
     private String header = "";
@@ -82,19 +82,19 @@ public class VitalStatistics {
         this.ibuEnd = ibuEnd;
     }
 
-    public double getSrmStart() {
+    public int getSrmStart() {
         return srmStart;
     }
 
-    public void setSrmStart(double srmStart) {
+    public void setSrmStart(int srmStart) {
         this.srmStart = srmStart;
     }
 
-    public double getSrmEnd() {
+    public int getSrmEnd() {
         return srmEnd;
     }
 
-    public void setSrmEnd(double srmEnd) {
+    public void setSrmEnd(int srmEnd) {
         this.srmEnd = srmEnd;
     }
 
