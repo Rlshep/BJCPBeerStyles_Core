@@ -13,4 +13,5 @@ public class BjcpConstants {
     public static final String DEFAULT_COUNTRY = "US";
     public static final String[] ALLOWED_LANGUAGES = {"en", "es"};
     public static final List allowedLanguages = Arrays.asList(ALLOWED_LANGUAGES);
+    public static final int MAX_SEARCH_CHARS = 3;
 }

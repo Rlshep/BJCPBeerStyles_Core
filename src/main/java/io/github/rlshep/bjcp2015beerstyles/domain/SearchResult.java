@@ -1,5 +1,7 @@
 package io.github.rlshep.bjcp2015beerstyles.domain;
 
+import java.util.Objects;
+
 public class SearchResult {
     private long id;
     private String query;
@@ -36,5 +38,20 @@ public class SearchResult {
 
     public void setTableName(String tableName) {
         this.tableName = tableName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SearchResult that = (SearchResult) o;
+        return id == that.id &&
+                resultId == that.resultId &&
+                Objects.equals(tableName, that.tableName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, resultId, tableName);
     }
 }
