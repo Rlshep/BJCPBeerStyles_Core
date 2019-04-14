@@ -1,8 +1,10 @@
 package io.github.rlshep.bjcp2015beerstyles.domain;
 
-public class Synonyms {
+public class Synonym {
     private String from;
     private String to;
+
+    private String language;
 
     public String getFrom() {
         return from;
@@ -18,5 +20,13 @@ public class Synonyms {
 
     public void setTo(String to) {
         this.to = to;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
     }
 }
