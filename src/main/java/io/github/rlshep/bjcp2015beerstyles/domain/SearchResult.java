@@ -7,6 +7,7 @@ public class SearchResult {
     private String query;
     private long resultId;
     private String tableName;
+    private String language;
 
     public long getId() {
         return id;
@@ -38,6 +39,15 @@ public class SearchResult {
 
     public void setTableName(String tableName) {
         this.tableName = tableName;
+    }
+
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
     }
 
     @Override
