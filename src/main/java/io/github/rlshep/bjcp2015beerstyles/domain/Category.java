@@ -33,8 +33,27 @@ public class Category implements Comparable {
     }
 
     public Category(Category clone) {
-        this.language = clone.getLanguage();
+        this.categoryCode = clone.getCategoryCode();
+        this.name = clone.getName();
         this.revision = clone.getRevision();
+        this.language = clone.getLanguage();
+        this.orderNumber = clone.getOrderNumber();
+
+        for (Section cloneSection : clone.getSections()) {
+            this.sections.add(new Section(cloneSection));
+        }
+
+        for (Category cloneCategory : clone.getChildCategories()) {
+            this.childCategories.add(new Category(cloneCategory));
+        }
+
+        for (VitalStatistics cloneVitalStatistic : clone.getVitalStatisticses()) {
+            this.vitalStatisticses.add(new VitalStatistics(cloneVitalStatistic));
+        }
+
+        for (Tag cloneTag : clone.getTags()) {
+            this.tags.add(new Tag(cloneTag));
+        }
     }
 
     public Category(Category clone, String categoryCode) {

@@ -9,6 +9,11 @@ public class Section {
     public Section() {
     }
 
+    public Section(Section clone) {
+        this.body = clone.getBody();
+        this.orderNumber = clone.getOrderNumber();
+    }
+
     public Section(long orderNumber) {
         this.orderNumber = orderNumber;
     }

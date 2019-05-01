@@ -5,6 +5,15 @@ public class Tag {
     private long categoryId;
     private String tag;
 
+    public Tag() {
+
+    }
+
+    public Tag(Tag clone) {
+
+        this.tag = clone.getTag();
+    }
+
     public long getId() {
         return id;
     }

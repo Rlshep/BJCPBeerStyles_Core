@@ -18,6 +18,21 @@ public class VitalStatistics {
     public VitalStatistics() {
     }
 
+    public VitalStatistics(VitalStatistics clone) {
+        this.ogStart = clone.getOgStart();
+        this.ogEnd = clone.getOgEnd();
+        this.fgStart = clone.getFgStart();
+        this.fgEnd = clone.getFgEnd();
+        this.ibuStart = clone.getIbuStart();
+        this.ibuEnd = clone.getIbuEnd();
+        this.srmStart = clone.getSrmStart();
+        this.srmEnd = clone.getSrmEnd();
+        this.abvStart = clone.getAbvStart();
+        this.abvEnd = clone.getAbvEnd();
+        this.header = clone.getHeader();
+
+    }
+
     public long getId() {
         return id;
     }

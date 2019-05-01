@@ -3,8 +3,13 @@ package io.github.rlshep.bjcp2015beerstyles.domain;
 public class Synonym {
     private String from;
     private String to;
-
     private String language;
+
+    public Synonym(Synonym clone) {
+        this.from = clone.getFrom();
+        this.to = clone.getTo();
+        this.language = clone.getLanguage();
+    }
 
     public String getFrom() {
         return from;
