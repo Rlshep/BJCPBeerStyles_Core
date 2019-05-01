@@ -10,6 +10,7 @@ public class BjcpConstants {
     public static final String DEFAULT_LANGUAGE = "en";
     public static final String DEFAULT_COUNTRY = "US";
     public static final String SPANISH_HYBRID = "es_en";
+    public static final String SPANISH = "es";
     public static final String[] ALLOWED_LANGUAGES = {"en", "es", "es_en"};
     public static final List allowedLanguages = Arrays.asList(ALLOWED_LANGUAGES);
 }
