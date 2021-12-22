@@ -14,4 +14,6 @@ public class BjcpConstants {
     public static final String UKRANIAN = "uk";
     public static final String[] ALLOWED_LANGUAGES = {"en", "es", "es_en", "uk"};
     public static final List allowedLanguages = Arrays.asList(ALLOWED_LANGUAGES);
+    public static final String BJCP_2015 = "BJCP_2015";
+    public static final String BA_2021 = "BA_2021";
 }
