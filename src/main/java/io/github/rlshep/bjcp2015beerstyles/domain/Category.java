@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Category implements Comparable {
-    public final static String CURRENT_REVISION = "2015";
     private long id;
     private long parentId;
     private String categoryCode;
@@ -28,8 +27,11 @@ public class Category implements Comparable {
         return 0;
     }
 
+    public Category(String revision) {
+        this.revision = revision;
+    }
+
     public Category() {
-        this.revision = CURRENT_REVISION;
     }
 
     public Category(Category clone) {
