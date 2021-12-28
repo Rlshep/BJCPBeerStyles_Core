@@ -14,6 +14,7 @@ public class VitalStatistics {
     private double abvStart;
     private double abvEnd;
     private String header = "";
+    private String headerTarget = "";
 
     public VitalStatistics() {
     }
@@ -30,7 +31,7 @@ public class VitalStatistics {
         this.abvStart = clone.getAbvStart();
         this.abvEnd = clone.getAbvEnd();
         this.header = clone.getHeader();
-
+        this.headerTarget = clone.getHeaderTarget();
     }
 
     public long getId() {
@@ -135,5 +136,13 @@ public class VitalStatistics {
 
     public void setHeader(String header) {
         this.header = header;
+    }
+
+    public String getHeaderTarget() {
+        return headerTarget;
+    }
+
+    public void setHeaderTarget(String headerTarget) {
+        this.headerTarget = headerTarget;
     }
 }

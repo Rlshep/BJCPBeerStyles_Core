@@ -19,6 +19,7 @@ public class BjcpConstants {
         put("2015 BJCP", BJCP_2015);
         put("2021 BA", BA_2021);
     }};
+    public static final String ZERO = "0";
 
     public static String getStyleTypeKeyValue(String value) {
         for (Map.Entry<String, String> entry : GUIDELINE_MAP.entrySet()) {
