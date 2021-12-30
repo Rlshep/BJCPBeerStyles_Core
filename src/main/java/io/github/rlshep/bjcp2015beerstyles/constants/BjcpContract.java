@@ -27,6 +27,7 @@ public class BjcpContract {
     public static final String COLUMN_SRM_END = "srm_end";
     public static final String COLUMN_ABV_START = "abv_start";
     public static final String COLUMN_ABV_END = "abv_end";
+    public static final String COLUMN_HEADER_TARGET = "header_target";
 
     public static final String TABLE_META = "android_metadata";
     public static final String COLUMN_LOCALE = "locale";

@@ -8,7 +8,7 @@ public class CategoryTest {
 
     @Test
     public void getTruncatedCategoryCodeReturnsNoChangeIfNoDash() {
-        Category category = new Category();
+        Category category = new Category("BJCP_2015");
         category.setCategoryCode("21C");
 
         assertEquals("21C", category.getTruncatedCategoryCode());
@@ -16,7 +16,7 @@ public class CategoryTest {
 
     @Test
     public void getTruncatedCategoryCodeReturnsNothingAfterDash() {
-        Category category = new Category();
+        Category category = new Category("BJCP_2015");
         category.setCategoryCode("21C-black");
 
         assertEquals("21C", category.getTruncatedCategoryCode());
