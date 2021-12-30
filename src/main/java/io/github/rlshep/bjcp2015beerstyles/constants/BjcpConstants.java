@@ -8,7 +8,7 @@ public class BjcpConstants {
     public static final int MAX_SEARCH_CHARS = 3;
     public static final String DEFAULT_LANGUAGE = "en";
     public static final String DEFAULT_COUNTRY = "US";
-    public static final String SPANISH_HYBRID = "es_en";
+    public static final String ENGLISH = "en";
     public static final String SPANISH = "es";
     public static final String UKRANIAN = "uk";
     public static final String[] ALLOWED_LANGUAGES = {"en", "es", "es_en", "uk"};
