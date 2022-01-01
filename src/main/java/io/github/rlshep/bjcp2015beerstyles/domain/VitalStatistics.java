@@ -3,35 +3,29 @@ package io.github.rlshep.bjcp2015beerstyles.domain;
 public class VitalStatistics {
     private long id;
     private long categoryId;
-    private double ogStart;
-    private double ogEnd;
-    private double fgStart;
-    private double fgEnd;
-    private int ibuStart;
-    private int ibuEnd;
-    private double srmStart;
-    private double srmEnd;
-    private double abvStart;
-    private double abvEnd;
+    private String type = "";
     private String header = "";
-    private String headerTarget = "";
+    private String notes = "";
+    private double start;
+    private double end;
 
     public VitalStatistics() {
     }
 
     public VitalStatistics(VitalStatistics clone) {
-        this.ogStart = clone.getOgStart();
-        this.ogEnd = clone.getOgEnd();
-        this.fgStart = clone.getFgStart();
-        this.fgEnd = clone.getFgEnd();
-        this.ibuStart = clone.getIbuStart();
-        this.ibuEnd = clone.getIbuEnd();
-        this.srmStart = clone.getSrmStart();
-        this.srmEnd = clone.getSrmEnd();
-        this.abvStart = clone.getAbvStart();
-        this.abvEnd = clone.getAbvEnd();
+        this.type = clone.getType();
         this.header = clone.getHeader();
-        this.headerTarget = clone.getHeaderTarget();
+        this.notes = clone.getNotes();
+        this.start = clone.getStart();
+        this.end = clone.getEnd();
+    }
+
+    public String getHeader() {
+        return header;
+    }
+
+    public void setHeader(String header) {
+        this.header = header;
     }
 
     public long getId() {
@@ -50,99 +44,36 @@ public class VitalStatistics {
         this.categoryId = categoryId;
     }
 
-    public double getOgStart() {
-        return ogStart;
+    public double getStart() {
+        return start;
     }
 
-    public void setOgStart(double ogStart) {
-        this.ogStart = ogStart;
+    public void setStart(double start) {
+        this.start = start;
     }
 
-    public double getOgEnd() {
-        return ogEnd;
+    public String getType() {
+        return type;
     }
 
-    public void setOgEnd(double ogEnd) {
-        this.ogEnd = ogEnd;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public double getFgStart() {
-        return fgStart;
+    public double getEnd() {
+        return end;
     }
 
-    public void setFgStart(double fgStart) {
-        this.fgStart = fgStart;
+    public void setEnd(double end) {
+        this.end = end;
     }
 
-    public double getFgEnd() {
-        return fgEnd;
+    public String getNotes() {
+        return notes;
     }
 
-    public void setFgEnd(double fgEnd) {
-        this.fgEnd = fgEnd;
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 
-    public int getIbuStart() {
-        return ibuStart;
-    }
-
-    public void setIbuStart(int ibuStart) {
-        this.ibuStart = ibuStart;
-    }
-
-    public int getIbuEnd() {
-        return ibuEnd;
-    }
-
-    public void setIbuEnd(int ibuEnd) {
-        this.ibuEnd = ibuEnd;
-    }
-
-    public double getSrmStart() {
-        return srmStart;
-    }
-
-    public void setSrmStart(double srmStart) {
-        this.srmStart = srmStart;
-    }
-
-    public double getSrmEnd() {
-        return srmEnd;
-    }
-
-    public void setSrmEnd(double srmEnd) {
-        this.srmEnd = srmEnd;
-    }
-
-    public double getAbvStart() {
-        return abvStart;
-    }
-
-    public void setAbvStart(double abvStart) {
-        this.abvStart = abvStart;
-    }
-
-    public double getAbvEnd() {
-        return abvEnd;
-    }
-
-    public void setAbvEnd(double abvEnd) {
-        this.abvEnd = abvEnd;
-    }
-
-    public String getHeader() {
-        return header;
-    }
-
-    public void setHeader(String header) {
-        this.header = header;
-    }
-
-    public String getHeaderTarget() {
-        return headerTarget;
-    }
-
-    public void setHeaderTarget(String headerTarget) {
-        this.headerTarget = headerTarget;
-    }
 }
