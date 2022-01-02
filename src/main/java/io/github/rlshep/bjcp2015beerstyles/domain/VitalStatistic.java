@@ -1,23 +1,23 @@
 package io.github.rlshep.bjcp2015beerstyles.domain;
 
-public class VitalStatistics {
+public class VitalStatistic {
     private long id;
     private long categoryId;
     private String type = "";
     private String header = "";
     private String notes = "";
-    private double start;
-    private double end;
+    private double low;
+    private double high;
 
-    public VitalStatistics() {
+    public VitalStatistic() {
     }
 
-    public VitalStatistics(VitalStatistics clone) {
+    public VitalStatistic(VitalStatistic clone) {
         this.type = clone.getType();
         this.header = clone.getHeader();
         this.notes = clone.getNotes();
-        this.start = clone.getStart();
-        this.end = clone.getEnd();
+        this.low = clone.getLow();
+        this.high = clone.getHigh();
     }
 
     public String getHeader() {
@@ -44,12 +44,12 @@ public class VitalStatistics {
         this.categoryId = categoryId;
     }
 
-    public double getStart() {
-        return start;
+    public double getLow() {
+        return low;
     }
 
-    public void setStart(double start) {
-        this.start = start;
+    public void setLow(double low) {
+        this.low = low;
     }
 
     public String getType() {
@@ -60,12 +60,12 @@ public class VitalStatistics {
         this.type = type;
     }
 
-    public double getEnd() {
-        return end;
+    public double getHigh() {
+        return high;
     }
 
-    public void setEnd(double end) {
-        this.end = end;
+    public void setHigh(double high) {
+        this.high = high;
     }
 
     public String getNotes() {
