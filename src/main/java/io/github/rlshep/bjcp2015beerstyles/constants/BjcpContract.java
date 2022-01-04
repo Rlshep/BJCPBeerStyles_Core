@@ -64,4 +64,5 @@ public class BjcpContract {
     public static final String XML_HREF = "href";
     public static final String XML_TAGS = "tags";
     public static final String XML_TAG = "tag";
+    public static final String XML_ALL = "all";
 }
