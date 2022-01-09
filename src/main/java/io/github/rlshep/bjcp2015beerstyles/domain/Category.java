@@ -14,7 +14,7 @@ public class Category implements Comparable {
     private boolean bookmarked = false;
     private List<Section> sections = new ArrayList<Section>();
     private List<Category> childCategories = new ArrayList<Category>();
-    private List<VitalStatistics> vitalStatisticses = new ArrayList<>();
+    private List<VitalStatistic> vitalStatistics = new ArrayList<>();
     private List<Tag> tags = new ArrayList<>();
 
     @Override
@@ -49,8 +49,8 @@ public class Category implements Comparable {
             this.childCategories.add(new Category(cloneCategory));
         }
 
-        for (VitalStatistics cloneVitalStatistic : clone.getVitalStatisticses()) {
-            this.vitalStatisticses.add(new VitalStatistics(cloneVitalStatistic));
+        for (VitalStatistic cloneVitalStatistic : clone.getVitalStatisticses()) {
+            this.vitalStatistics.add(new VitalStatistic(cloneVitalStatistic));
         }
 
         for (Tag cloneTag : clone.getTags()) {
@@ -160,12 +160,12 @@ public class Category implements Comparable {
         this.childCategories = childCategories;
     }
 
-    public List<VitalStatistics> getVitalStatisticses() {
-        return vitalStatisticses;
+    public List<VitalStatistic> getVitalStatisticses() {
+        return vitalStatistics;
     }
 
-    public void setVitalStatisticses(List<VitalStatistics> vitalStatisticses) {
-        this.vitalStatisticses = vitalStatisticses;
+    public void setVitalStatisticses(List<VitalStatistic> vitalStatistics) {
+        this.vitalStatistics = vitalStatistics;
     }
 
     public boolean isParent() {

@@ -12,22 +12,17 @@ public class BjcpContract {
 
     public static final String TABLE_SECTION = "SECTION";
     public static final String COLUMN_CAT_ID = "category_id";
-    public static final String COLUMN_HEADER = "header";
     public static final String COLUMN_BODY = "body";
+    public static final String COLUMN_TYPE = "type";
+    public static final String COLUMN_HEADER = "header";
+    public static final String COLUMN_NOTES = "notes";
     public static final String COLUMN_ORDER = "order_number";
+    public static final String COLUMN_LOW = "low";
+    public static final String COLUMN_HIGH = "high";
 
     public static final String TABLE_VITALS = "VITAL_STATISTICS";
-    public static final String COLUMN_OG_START = "og_start";
-    public static final String COLUMN_OG_END = "og_end";
-    public static final String COLUMN_FG_START = "fg_start";
-    public static final String COLUMN_FG_END = "fg_end";
-    public static final String COLUMN_IBU_START = "ibu_start";
-    public static final String COLUMN_IBU_END = "ibu_end";
-    public static final String COLUMN_SRM_START = "srm_start";
-    public static final String COLUMN_SRM_END = "srm_end";
-    public static final String COLUMN_ABV_START = "abv_start";
-    public static final String COLUMN_ABV_END = "abv_end";
-    public static final String COLUMN_HEADER_TARGET = "header_target";
+    public static final String COLUMN_TARGET = "target";
+
 
     public static final String TABLE_META = "android_metadata";
     public static final String COLUMN_LOCALE = "locale";
@@ -50,6 +45,8 @@ public class BjcpContract {
     public static final String XML_CATEGORY = "category";
     public static final String XML_SUBCATEGORY = "subcategory";
     public static final String XML_STATS = "stats";
+    public static final String XML_TYPE = "type";
+    public static final String XML_HEADER = "header";
     public static final String XML_OG = "og";
     public static final String XML_FG = "fg";
     public static final String XML_IBU = "ibu";
@@ -67,4 +64,5 @@ public class BjcpContract {
     public static final String XML_HREF = "href";
     public static final String XML_TAGS = "tags";
     public static final String XML_TAG = "tag";
+    public static final String XML_ALL = "all";
 }
