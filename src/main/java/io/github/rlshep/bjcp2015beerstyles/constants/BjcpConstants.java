@@ -6,6 +6,7 @@ public class BjcpConstants {
     public static final String DATABASE_NAME = "BjcpBeerStyles.db";
     public static final int DATABASE_VERSION = 23;   // Make sure LoadBjcp project picks up this change for PRAGMA header
     public static final int MAX_SEARCH_CHARS = 3;
+    public static final String ZERO = "0";
     public static final String DEFAULT_LANGUAGE = "en";
     public static final String DEFAULT_COUNTRY = "US";
     public static final String ENGLISH = "en";
@@ -21,10 +22,14 @@ public class BjcpConstants {
         put("2015 BJCP", BJCP_2015);
         put("2021 BJCP", BJCP_2021);
     }};
-    public static final String ZERO = "0";
+    public static final Map<String, String> LANGUAGE_MAP = new HashMap<String, String>() {{
+        put("English", ENGLISH);
+        put("Español", SPANISH);
+        put("український", UKRANIAN);
+    }};
 
-    public static String getStyleTypeKeyValue(String value) {
-        for (Map.Entry<String, String> entry : GUIDELINE_MAP.entrySet()) {
+    public static String getKeyValue(Map<String, String> map, String value) {
+        for (Map.Entry<String, String> entry : map.entrySet()) {
             if (Objects.equals(value, entry.getValue())) {
                 return entry.getKey();
             }
