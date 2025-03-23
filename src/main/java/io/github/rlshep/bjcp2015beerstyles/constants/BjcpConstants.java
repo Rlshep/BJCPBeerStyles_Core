@@ -4,7 +4,7 @@ import java.util.*;
 
 public class BjcpConstants {
     public static final String DATABASE_NAME = "BjcpBeerStyles.db";
-    public static final int DATABASE_VERSION = 30;   // Make sure LoadBjcp project picks up this change for PRAGMA header
+    public static final int DATABASE_VERSION = 31;   // Make sure LoadBjcp project picks up this change for PRAGMA header
     public static final int MAX_SEARCH_CHARS = 3;
     public static final String ZERO = "0";
     public static final String DEFAULT_LANGUAGE = "en";
@@ -16,13 +16,11 @@ public class BjcpConstants {
     public static final List allowedLanguages = Arrays.asList(ALLOWED_LANGUAGES);
     public static final String BJCP_2015 = "BJCP_2015";
     public static final String BJCP_2021 = "BJCP_2021";
-    public static final String BJCP_2025 = "BJCP_2025";
     public static final String BA_2021 = "BA_2021";
     public static final Map<String, String> GUIDELINE_MAP = new HashMap<String, String>() {{
         put("2021 BA", BA_2021);
         put("2015 BJCP", BJCP_2015);
         put("2021 BJCP", BJCP_2021);
-	put("2025 BJCP", BJCP_2025);
     }};
     public static final Map<String, String> LANGUAGE_MAP = new HashMap<String, String>() {{
         put("English", ENGLISH);
