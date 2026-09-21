@@ -9,11 +9,14 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
-	id 'maven'
+	id 'maven-publish'
 }
 
 version = '1.0.0'
 group = 'io.github.rlshep'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'

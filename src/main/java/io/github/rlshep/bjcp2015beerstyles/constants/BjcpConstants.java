@@ -16,12 +16,25 @@ public class BjcpConstants {
     public static final List allowedLanguages = Arrays.asList(ALLOWED_LANGUAGES);
     public static final String BJCP_2015 = "BJCP_2015";
     public static final String BJCP_2021 = "BJCP_2021";
+    public static final String BJCP_MEAD_2015 = "BJCP_Mead_2015";
+    public static final String BJCP_MEAD_2026 = "BJCP_Mead_2026";
+    public static final String BJCP_CIDER_2015 = "BJCP_Cider_2015";
+    public static final String BJCP_CIDER_2025 = "BJCP_Cider_2025";
     public static final String BA_2021 = "BA_2021";
     public static final Map<String, String> GUIDELINE_MAP = new HashMap<String, String>() {{
         put("2021 BA", BA_2021);
         put("2015 BJCP", BJCP_2015);
         put("2021 BJCP", BJCP_2021);
     }};
+    public static final Map<String, String> MEAD_MAP = new HashMap<String, String>() {{
+        put("2015 BJCP", BJCP_MEAD_2015);
+        put("2026 BJCP", BJCP_MEAD_2026);
+    }};
+    public static final Map<String, String> CIDER_MAP = new HashMap<String, String>() {{
+        put("2015 BJCP", BJCP_CIDER_2015);
+        put("2025 BJCP", BJCP_CIDER_2025);
+    }};
+    
     public static final Map<String, String> LANGUAGE_MAP = new HashMap<String, String>() {{
         put("English", ENGLISH);
         put("Español", SPANISH);
