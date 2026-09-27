@@ -1,0 +1,2 @@
+gradle build
+cp -f /c/dev/GitHub/BJCPBeerStyles_Core/build/libs/BJCPBeerStyles_Core-1.0.0.jar /c/dev/GitHub/BJCPBeerStyles_Android/bjcp_beer_styles/libs/

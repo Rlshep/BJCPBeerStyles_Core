@@ -27,12 +27,12 @@ public class BjcpConstants {
         put("2021 BJCP", BJCP_2021);
     }};
     public static final Map<String, String> MEAD_MAP = new HashMap<String, String>() {{
-        put("2015 BJCP", BJCP_MEAD_2015);
-        put("2026 BJCP", BJCP_MEAD_2026);
+        put("2015 BJCP Mead", BJCP_MEAD_2015);
+        put("2026 BJCP Mead", BJCP_MEAD_2026);
     }};
     public static final Map<String, String> CIDER_MAP = new HashMap<String, String>() {{
-        put("2015 BJCP", BJCP_CIDER_2015);
-        put("2025 BJCP", BJCP_CIDER_2025);
+        put("2015 BJCP Cider", BJCP_CIDER_2015);
+        put("2025 BJCP Cider", BJCP_CIDER_2025);
     }};
     
     public static final Map<String, String> LANGUAGE_MAP = new HashMap<String, String>() {{
